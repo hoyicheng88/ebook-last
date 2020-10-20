@@ -27,6 +27,7 @@ struct product: View {
             
             
             List{
+                Section(header:Text("劇照")){
                 ScrollView(.horizontal)
                 {
                     let rows = [GridItem()]
@@ -49,8 +50,8 @@ struct product: View {
                     }
                 }
                 .fixedSize(horizontal: false, vertical: true)
-                
-                
+                }
+                Section(header:Text("嚴選作品")){
                 Group{
                     HStack{
                         NavigationLink(
@@ -276,6 +277,7 @@ struct product: View {
                                 .font(.custom("jf-openhuninn-1.1", size: 25))
                         }.navigationBarTitle(Text("西遊．降魔篇"))
                     }
+                }
                 }
             }.navigationTitle("經典作品")
         }

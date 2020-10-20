@@ -34,7 +34,7 @@ struct intro: View {
                     .font(.custom("jf-openhuninn-1.1", size: 22))
                     .padding()
                 Spacer()
-                Link("資料來源：維基百科", destination:URL(string: "https://zh.wikipedia.org/wiki/Wiki")!)
+                Link("資料來源：維基百科", destination:URL(string: Film.url)!)
                     .padding(.leading, 200.0)
                     .foregroundColor(Color("bllue"))
                     .font(.custom("jf-openhuninn-1.1", size: 15))
